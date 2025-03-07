@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  user_service:
+    build: ./user_service
+    ports:
+      - "5000:5000"
+
+  medication_service:
+    build: ./medication_service
+    ports:
+      - "5001:5001"
+
+  appointment_service:
+    build: ./appointment_service
+    ports:
+      - "5002:5002"
+
+  pdf_export_service:
+    build: ./pdf_export_service
+    ports:
+      - "5003:5003"
+
+  drug_interaction_service:
+    build: ./drug_interaction_service
+    ports:
+      - "5004:5004"
